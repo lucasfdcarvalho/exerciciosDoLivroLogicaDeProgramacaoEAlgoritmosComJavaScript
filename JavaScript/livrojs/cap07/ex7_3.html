@@ -1,0 +1,9 @@
+<script>
+    const palavra = prompt("Palavra: "); // obtém a palavra
+    const tam = palavra.length; // obtém o tamanho da palavra
+    let resposta = palavra.charAt(tam - 1).toUpperCase(); // obtém a última letra e converte para maiúscula
+    for(let i = tam - 2; i >= 0; i--){
+        resposta += palavra.charAt(i).toLowerCase();
+    }
+    alert(`Palavra: ${palavra}\nInvertida: ${resposta}`);
+</script>

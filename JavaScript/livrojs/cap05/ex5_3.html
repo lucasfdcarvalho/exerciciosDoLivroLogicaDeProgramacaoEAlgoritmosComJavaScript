@@ -1,0 +1,14 @@
+<script>
+    let num; // declara a variável
+    do{ // faça
+        num = Number(prompt("Número: ")); // lê um número
+        if(num == 0 || isNaN(num)){ // se o número é 0 ou não é número
+            alert("Digite um número válido...");
+        }
+    }while(num == 0 || isNaN(num)) // enquanto num é igual a 0 ou inválido
+    let pares = `Pares entre 1 e ${num}: `; // string que irá conter a resposta
+    for(let i = 2; i <= num; i = i + 2){
+        pares = pares + "," + i;
+    }
+    alert(pares); // exibe a lista dos números pares
+</script>
